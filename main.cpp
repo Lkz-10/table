@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <assert.h>
 
 const int TEAMS_CNT = 4;
 
@@ -15,6 +16,8 @@ int main()
 
 void Print (int* table)
 {
+    assert(table);
+
     int cnt = 0;
     const int cnt_max = OneToXSum(TEAMS_CNT);
 
