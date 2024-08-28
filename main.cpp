@@ -56,7 +56,7 @@ void Output(int** addr, int* line_lens, int nlines)
 {
     for (int i = 0; i < nlines; ++i) {
         for (int j = 0; j < line_lens[i]; j++) {
-            printf("%3d ", *(addr[i] + j));
+            printf("%3d ", addr[i][j]);
         }
         printf("\n");
     }
